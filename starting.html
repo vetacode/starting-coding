@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Class: Web Dev Roadmap</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/motion@10.16.2/dist/motion.js"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+
+      .glass-card {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .slide {
+        display: none;
+        min-height: 80vh;
+      }
+
+      .slide.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #38bdf8, #818cf8);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div
+      class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex items-center gap-4 glass-card px-6 py-3 rounded-full shadow-2xl"
+    >
+      <button
+        onclick="prevSlide()"
+        class="hover:text-sky-400 transition-colors px-2"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <span
+        id="slideIndicator"
+        class="text-sm font-semibold tracking-widest text-sky-400"
+        >01 / 04</span
+      >
+      <button
+        onclick="nextSlide()"
+        class="hover:text-sky-400 transition-colors px-2"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <main class="container mx-auto px-6 pt-20 pb-32">
+      <section class="slide active" id="slide-1">
+        <div class="text-center">
+          <span
+            class="inline-block px-4 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-bold mb-4 border border-sky-500/20"
+            >BATCH #01 - 2026</span
+          >
+          <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tighter">
+            Mulai <span class="gradient-text">Ngoding</span><br />Dari Nol.
+          </h1>
+          <p
+            class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
+          >
+            Ubah ide kreatifmu menjadi website interaktif yang bisa diakses
+            seluruh dunia. Tanpa teori berbelit, langsung eksekusi.
+          </p>
+          <div
+            class="flex flex-wrap justify-center gap-6 text-2xl text-slate-500"
+          >
+            <i class="fab fa-html5 hover:text-orange-500 transition-colors"></i>
+            <i
+              class="fab fa-css3-alt hover:text-blue-500 transition-colors"
+            ></i>
+            <i class="fab fa-js hover:text-yellow-400 transition-colors"></i>
+            <i class="fab fa-react hover:text-sky-400 transition-colors"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-2">
+        <h2 class="text-3xl font-bold mb-12 text-center">
+          3 Fondasi Utama Web
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="glass-card p-8 rounded-3xl transform transition-all hover:-translate-y-2"
+          >
+            <div
+              class="w-12 h-12 bg-orange-500/20 text-orange-500 flex items-center justify-center rounded-xl mb-6 text-2xl"
+            >
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">HTML</h3>
+            <p class="text-slate-400">
+              Tulang punggung website. Mengatur struktur, teks, gambar, dan
+              link.
+            </p>
+          </div>
+          <div
+            class="glass-card p-8 rounded-3xl transform transition-all hover:-translate-y-2"
+          >
+            <div
+              class="w-12 h-12 bg-blue-500/20 text-blue-500 flex items-center justify-center rounded-xl mb-6 text-2xl"
+            >
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">CSS</h3>
+            <p class="text-slate-400">
+              Make-up website. Mengatur warna, tata letak (layout), dan animasi
+              agar cantik.
+            </p>
+          </div>
+          <div
+            class="glass-card p-8 rounded-3xl transform transition-all hover:-translate-y-2"
+          >
+            <div
+              class="w-12 h-12 bg-yellow-500/20 text-yellow-500 flex items-center justify-center rounded-xl mb-6 text-2xl"
+            >
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">JavaScript</h3>
+            <p class="text-slate-400">
+              Otak website. Memberikan logika, interaksi, dan fungsi yang
+              kompleks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-3">
+        <div class="max-w-4xl mx-auto w-full">
+          <h2 class="text-4xl font-bold mb-8 tracking-tight">
+            Persiapan Senjata 🛠️
+          </h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 glass-card rounded-2xl">
+              <div class="bg-blue-600 p-3 rounded-lg">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <h4
+                  class="font-bold uppercase text-xs text-sky-400 mb-1 tracking-widest"
+                >
+                  Editor
+                </h4>
+                <p>Visual Studio Code (Paling populer & gratis)</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 glass-card rounded-2xl">
+              <div class="bg-purple-600 p-3 rounded-lg">
+                <i class="fas fa-plug"></i>
+              </div>
+              <div>
+                <h4
+                  class="font-bold uppercase text-xs text-purple-400 mb-1 tracking-widest"
+                >
+                  Extensions
+                </h4>
+                <p>Live Server, Prettier, Auto Rename Tag</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 glass-card rounded-2xl">
+              <div class="bg-emerald-600 p-3 rounded-lg">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div>
+                <h4
+                  class="font-bold uppercase text-xs text-emerald-400 mb-1 tracking-widest"
+                >
+                  Browser
+                </h4>
+                <p>Google Chrome (Wajib pakai DevTools-nya!)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-4">
+        <div
+          class="glass-card p-12 rounded-[3rem] text-center max-w-3xl mx-auto border-sky-500/30"
+        >
+          <h2 class="text-4xl font-bold mb-6">Siap Bangun Project Pertama?</h2>
+          <p class="text-slate-400 mb-8">
+            Jangan biarkan ide menguap begitu saja. Mari kita mulai tulis baris
+            kode pertamamu malam ini!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://code.visualstudio.com/download" target="_blank">
+              <button
+                class="bg-sky-500 hover:bg-sky-400 text-white font-bold py-4 px-8 rounded-2xl transition-all shadow-lg shadow-sky-500/20"
+              >
+                Download VS Code
+              </button>
+            </a>
+            <a
+              href="https://wa.me/628119950205?text=HaloTeam,%20saya%20mau%20tanya%20cara%20install%20VSCode"
+              target="_blank"
+            >
+              <button
+                class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-4 px-8 rounded-2xl transition-all"
+              >
+                Tanya Mentor
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Slide Logic
+      let currentSlide = 1;
+      const totalSlides = 4;
+      const { animate } = Motion;
+
+      function updateSlide() {
+        // Hide all slides
+        document.querySelectorAll('.slide').forEach((s) => {
+          s.classList.remove('active');
+        });
+
+        // Show current slide
+        const activeSlide = document.getElementById(`slide-${currentSlide}`);
+        activeSlide.classList.add('active');
+
+        // Update Indicator
+        document.getElementById('slideIndicator').innerText =
+          `0${currentSlide} / 0${totalSlides}`;
+
+        // Animate content using Framer Motion (Motion.js)
+        animate(
+          activeSlide,
+          { opacity: [0, 1], y: [20, 0] },
+          { duration: 0.5, easing: 'ease-out' },
+        );
+      }
+
+      function nextSlide() {
+        if (currentSlide < totalSlides) {
+          currentSlide++;
+          updateSlide();
+        }
+      }
+
+      function prevSlide() {
+        if (currentSlide > 1) {
+          currentSlide--;
+          updateSlide();
+        }
+      }
+
+      // Keyboard Navigation
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+      });
+
+      // Initialize first slide animation
+      window.onload = () => updateSlide();
+    </script>
+  </body>
+</html>
