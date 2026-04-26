@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struktur Landing Page yang Benar</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      h1,
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        opacity: 0.9;
+      }
+
+      .section {
+        margin-bottom: 60px;
+        padding: 30px;
+        border-radius: 12px;
+        background: #1e293b;
+      }
+
+      .label {
+        font-size: 12px;
+        color: #38bdf8;
+        margin-bottom: 10px;
+      }
+
+      .note {
+        margin-top: 15px;
+        font-size: 13px;
+        background: #020617;
+        padding: 12px;
+        border-left: 3px solid #38bdf8;
+      }
+
+      .cta-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background: #38bdf8;
+        color: black;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+
+      .cta-button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- HERO -->
+      <div class="section">
+        <div class="label">SECTION 1: HERO</div>
+        <h1>Landing Page Kamu Sudah Pakai AI… Tapi Masih Terlihat Biasa?</h1>
+        <p>
+          Belajar cara merapikan struktur dan tampilan supaya terlihat lebih
+          profesional & layak dijual.
+        </p>
+        <a href="#" class="cta-button">Mulai Belajar</a>
+
+        <div class="note">
+          💡 <b>Fungsi Hero:</b><br />
+          - Menarik perhatian pertama (hook)<br />
+          - Menjelaskan apa yang ditawarkan<br />
+          - Mengarahkan user ke aksi (CTA)<br /><br />
+
+          ⚠️ Kesalahan umum:<br />
+          - Terlalu banyak teks<br />
+          - Tidak jelas apa yang ditawarkan<br />
+        </div>
+      </div>
+
+      <!-- PROBLEM -->
+      <div class="section">
+        <div class="label">SECTION 2: PROBLEM</div>
+        <h2>Kenapa Landing Page dari AI Terlihat Kurang Menarik?</h2>
+        <p>
+          Banyak orang sudah generate dengan AI… tapi hasilnya tetap tidak enak
+          dilihat dan tidak meyakinkan.
+        </p>
+
+        <ul>
+          <li>Layout berantakan</li>
+          <li>Section tidak jelas</li>
+          <li>Tampilan tidak profesional</li>
+        </ul>
+
+        <div class="note">
+          💡 <b>Fungsi Problem Section:</b><br />
+          - Membuat user merasa “ini gue banget”<br />
+          - Menarik emosi & perhatian<br /><br />
+
+          ⚠️ Kesalahan umum:<br />
+          - Terlalu umum (tidak spesifik)<br />
+          - Tidak relate dengan user<br />
+        </div>
+      </div>
+
+      <!-- SOLUTION -->
+      <div class="section">
+        <div class="label">SECTION 3: SOLUTION</div>
+        <h2>Solusinya Bukan Ganti AI… Tapi Memperbaiki Struktur & Layout</h2>
+        <p>
+          Dengan memahami struktur yang benar, kamu bisa mengubah hasil biasa
+          menjadi lebih rapi dan profesional.
+        </p>
+
+        <ul>
+          <li>Susun ulang section dengan benar</li>
+          <li>Rapikan spacing & alignment</li>
+          <li>Gunakan hierarki visual</li>
+        </ul>
+
+        <div class="note">
+          💡 <b>Fungsi Solution Section:</b><br />
+          - Menawarkan solusi yang jelas<br />
+          - Menunjukkan arah perbaikan<br /><br />
+
+          ⚠️ Kesalahan umum:<br />
+          - Tidak langsung ke solusi<br />
+          - Terlalu teknis untuk pemula<br />
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="section">
+        <div class="label">SECTION 4: CTA</div>
+        <h2>Sekarang Saatnya Kamu Upgrade Landing Page Kamu</h2>
+        <p>
+          Jangan cuma generate… tapi pahami dan perbaiki agar bisa digunakan
+          untuk jualan.
+        </p>
+
+        <a href="#" class="cta-button" onclick="handleCTA()"
+          >Gabung & Mulai Praktik</a
+        >
+
+        <div class="note">
+          💡 <b>Fungsi CTA:</b><br />
+          - Mengajak user melakukan aksi<br />
+          - Mengubah pengunjung jadi leads<br /><br />
+
+          ⚠️ Kesalahan umum:<br />
+          - CTA tidak jelas<br />
+          - Tidak ada urgency<br />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function handleCTA() {
+        alert('CTA diklik! Ini nanti bisa diarahkan ke WhatsApp / form.');
+      }
+    </script>
+  </body>
+</html>
