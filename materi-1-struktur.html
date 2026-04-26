@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Struktur Landing Page yang Benar</title>
 
+    <!-- FONT AWESOME -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <style>
       body {
         margin: 0;
@@ -42,12 +48,29 @@
         margin-bottom: 10px;
       }
 
+      .label i {
+        margin-right: 6px;
+      }
+
       .note {
         margin-top: 15px;
         font-size: 13px;
         background: #020617;
         padding: 12px;
         border-left: 3px solid #38bdf8;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 8px;
+      }
+
+      ul li i {
+        margin-right: 8px;
+        color: #38bdf8;
       }
 
       .cta-button {
@@ -61,8 +84,12 @@
         font-weight: bold;
       }
 
+      .cta-button i {
+        margin-left: 8px;
+      }
+
       .cta-button:hover {
-        opacity: 0.8;
+        opacity: 0.85;
       }
     </style>
   </head>
@@ -71,29 +98,39 @@
     <div class="container">
       <!-- HERO -->
       <div class="section">
-        <div class="label">SECTION 1: HERO</div>
+        <div class="label">
+          <i class="fa-solid fa-rocket"></i> SECTION 1: HERO
+        </div>
+
         <h1>Landing Page Kamu Sudah Pakai AI… Tapi Masih Terlihat Biasa?</h1>
         <p>
           Belajar cara merapikan struktur dan tampilan supaya terlihat lebih
           profesional & layak dijual.
         </p>
-        <a href="#" class="cta-button">Mulai Belajar</a>
+
+        <a href="#" class="cta-button">
+          Mulai Belajar <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
         <div class="note">
-          💡 <b>Fungsi Hero:</b><br />
+          <i class="fa-solid fa-lightbulb"></i> <b>Fungsi Hero:</b><br />
           - Menarik perhatian pertama (hook)<br />
           - Menjelaskan apa yang ditawarkan<br />
           - Mengarahkan user ke aksi (CTA)<br /><br />
 
-          ⚠️ Kesalahan umum:<br />
+          <i class="fa-solid fa-triangle-exclamation"></i> <b>Kesalahan umum:</b
+          ><br />
           - Terlalu banyak teks<br />
-          - Tidak jelas apa yang ditawarkan<br />
+          - Tidak jelas apa yang ditawarkan
         </div>
       </div>
 
       <!-- PROBLEM -->
       <div class="section">
-        <div class="label">SECTION 2: PROBLEM</div>
+        <div class="label">
+          <i class="fa-solid fa-circle-exclamation"></i> SECTION 2: PROBLEM
+        </div>
+
         <h2>Kenapa Landing Page dari AI Terlihat Kurang Menarik?</h2>
         <p>
           Banyak orang sudah generate dengan AI… tapi hasilnya tetap tidak enak
@@ -101,25 +138,30 @@
         </p>
 
         <ul>
-          <li>Layout berantakan</li>
-          <li>Section tidak jelas</li>
-          <li>Tampilan tidak profesional</li>
+          <li><i class="fa-solid fa-xmark"></i> Layout berantakan</li>
+          <li><i class="fa-solid fa-xmark"></i> Section tidak jelas</li>
+          <li><i class="fa-solid fa-xmark"></i> Tampilan tidak profesional</li>
         </ul>
 
         <div class="note">
-          💡 <b>Fungsi Problem Section:</b><br />
+          <i class="fa-solid fa-lightbulb"></i> <b>Fungsi Problem Section:</b
+          ><br />
           - Membuat user merasa “ini gue banget”<br />
           - Menarik emosi & perhatian<br /><br />
 
-          ⚠️ Kesalahan umum:<br />
+          <i class="fa-solid fa-triangle-exclamation"></i> <b>Kesalahan umum:</b
+          ><br />
           - Terlalu umum (tidak spesifik)<br />
-          - Tidak relate dengan user<br />
+          - Tidak relate dengan user
         </div>
       </div>
 
       <!-- SOLUTION -->
       <div class="section">
-        <div class="label">SECTION 3: SOLUTION</div>
+        <div class="label">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> SECTION 3: SOLUTION
+        </div>
+
         <h2>Solusinya Bukan Ganti AI… Tapi Memperbaiki Struktur & Layout</h2>
         <p>
           Dengan memahami struktur yang benar, kamu bisa mengubah hasil biasa
@@ -127,43 +169,51 @@
         </p>
 
         <ul>
-          <li>Susun ulang section dengan benar</li>
-          <li>Rapikan spacing & alignment</li>
-          <li>Gunakan hierarki visual</li>
+          <li>
+            <i class="fa-solid fa-check"></i> Susun ulang section dengan benar
+          </li>
+          <li><i class="fa-solid fa-check"></i> Rapikan spacing & alignment</li>
+          <li><i class="fa-solid fa-check"></i> Gunakan hierarki visual</li>
         </ul>
 
         <div class="note">
-          💡 <b>Fungsi Solution Section:</b><br />
+          <i class="fa-solid fa-lightbulb"></i> <b>Fungsi Solution Section:</b
+          ><br />
           - Menawarkan solusi yang jelas<br />
           - Menunjukkan arah perbaikan<br /><br />
 
-          ⚠️ Kesalahan umum:<br />
+          <i class="fa-solid fa-triangle-exclamation"></i> <b>Kesalahan umum:</b
+          ><br />
           - Tidak langsung ke solusi<br />
-          - Terlalu teknis untuk pemula<br />
+          - Terlalu teknis untuk pemula
         </div>
       </div>
 
       <!-- CTA -->
       <div class="section">
-        <div class="label">SECTION 4: CTA</div>
+        <div class="label">
+          <i class="fa-solid fa-bullseye"></i> SECTION 4: CTA
+        </div>
+
         <h2>Sekarang Saatnya Kamu Upgrade Landing Page Kamu</h2>
         <p>
           Jangan cuma generate… tapi pahami dan perbaiki agar bisa digunakan
           untuk jualan.
         </p>
 
-        <a href="#" class="cta-button" onclick="handleCTA()"
-          >Gabung & Mulai Praktik</a
-        >
+        <a href="#" class="cta-button" onclick="handleCTA()">
+          Gabung & Mulai Praktik <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
         <div class="note">
-          💡 <b>Fungsi CTA:</b><br />
+          <i class="fa-solid fa-lightbulb"></i> <b>Fungsi CTA:</b><br />
           - Mengajak user melakukan aksi<br />
           - Mengubah pengunjung jadi leads<br /><br />
 
-          ⚠️ Kesalahan umum:<br />
+          <i class="fa-solid fa-triangle-exclamation"></i> <b>Kesalahan umum:</b
+          ><br />
           - CTA tidak jelas<br />
-          - Tidak ada urgency<br />
+          - Tidak ada urgency
         </div>
       </div>
     </div>
